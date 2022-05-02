@@ -29,9 +29,11 @@
   "use strict";
 
   const userNumber = +promt('Введите число');
+
   const units = userNumber % 10;
   const tens = Math.trunc(userNumber / 10) % 10;
   const hundreds = Math.trunc (userNumber / 100) % 10;
+  
   console.log(`В числе ${userNumber} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`);
 
   console
